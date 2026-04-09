@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+}
+
+.grain-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD46FjBW8boUdCxmh2EzQGsX5DR4hBsKIG3Y9EJ34NrnEovzOvkH_yVRhYx8P2d4C3fqEhfJ05-CQf1NX6Fzf2LLEFDj4lg6WMasSS5wkkq3_RMc8i5Oeko-G3tbkT4t8vg5uClQKjJ3ntXKdMM4YR6DMNeuwcM9LTLLayCszWUUMLb3w2XJtRZyZMqjacSug8w7fApbfKJOYn3DPzmi3N7JyKhBRwQ73ReehSPyAB5xdcC3JAb3Vrar4kETltLMJY2JEfp7z1z89Y);
+    opacity: 0.03;
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+}

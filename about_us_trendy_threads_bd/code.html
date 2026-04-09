@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#16202e",
+                    "surface-dim": "#091421",
+                    "secondary-fixed": "#e4e2e1",
+                    "surface": "#091421",
+                    "on-primary-fixed": "#241a00",
+                    "on-primary-container": "#4f3d00",
+                    "primary-container": "#c8a84b",
+                    "surface-container-highest": "#2b3544",
+                    "inverse-on-surface": "#27313f",
+                    "outline": "#98907e",
+                    "primary": "#e5c363",
+                    "on-secondary-container": "#b6b5b4",
+                    "surface-bright": "#2f3a48",
+                    "error-container": "#93000a",
+                    "secondary-container": "#474747",
+                    "primary-fixed": "#ffe08c",
+                    "outline-variant": "#4d4637",
+                    "on-tertiary-container": "#414039",
+                    "on-primary": "#3d2f00",
+                    "surface-tint": "#e5c363",
+                    "on-tertiary": "#32302a",
+                    "on-error": "#690005",
+                    "surface-container-high": "#202b38",
+                    "background": "#091421",
+                    "on-tertiary-fixed": "#1d1c16",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-tertiary-fixed-variant": "#494740",
+                    "on-primary-fixed-variant": "#584400",
+                    "surface-container-low": "#111c29",
+                    "surface-container-lowest": "#040f1b",
+                    "on-background": "#d8e3f6",
+                    "tertiary-fixed": "#e7e2d9",
+                    "inverse-primary": "#745b00",
+                    "surface-variant": "#2b3544",
+                    "error": "#ffb4ab",
+                    "tertiary": "#cbc6be",
+                    "inverse-surface": "#d8e3f6",
+                    "tertiary-container": "#afaba3",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#d0c5b2",
+                    "primary-fixed-dim": "#e5c363",
+                    "on-surface": "#d8e3f6",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary": "#303030",
+                    "secondary": "#c8c6c6",
+                    "tertiary-fixed-dim": "#cac6be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .grainy-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary/30">
+<div class="grainy-overlay fixed inset-0 z-[100]"></div>
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#091421]/80 backdrop-blur-md flex justify-between items-center px-12 py-6 max-w-full shadow-[0_20px_40px_rgba(4,15,27,0.4)]">
+<div class="text-2xl font-bold tracking-widest text-[#e5c363] uppercase font-['Newsreader']">Global Atelier</div>
+<nav class="hidden md:flex gap-10">
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors font-['Newsreader'] tracking-tighter" href="#">Collections</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors font-['Newsreader'] tracking-tighter" href="#">Manufacturing</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors font-['Newsreader'] tracking-tighter" href="#">Sourcing</a>
+<a class="text-[#e5c363] border-b border-[#e5c363] pb-1 font-['Newsreader'] tracking-tighter" href="#">Heritage</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors font-['Newsreader'] tracking-tighter" href="#">Logistics</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 text-sm font-bold tracking-widest transition-all duration-300 hover:scale-105 active:scale-95">
+            Request Quote
+        </button>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden pt-20">
+<div class="absolute inset-0 bg-surface">
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% 50%, #16202e 0%, transparent 100%);"></div>
+</div>
+<div class="relative z-10 max-w-5xl">
+<h1 class="font-headline text-5xl md:text-8xl text-primary leading-none tracking-tighter mb-8 italic">
+                Crafted in Bangladesh.<br/>Trusted Worldwide.
+            </h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed tracking-wide opacity-80">
+                Since 2009, Trendy Threads BD has been manufacturing premium garments for global buyers — with our own factories, knitting units, and dyeing facilities.
+            </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+<span class="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll to Explore</span>
+<div class="w-px h-16 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-surface-container-lowest py-24 border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="text-5xl font-headline text-primary font-bold">15+</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant opacity-60">Years in Business</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="text-5xl font-headline text-primary font-bold">3</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant opacity-60">Production Facilities</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="text-5xl font-headline text-primary font-bold">2</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant opacity-60">Continents Served</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-2">
+<span class="text-5xl font-headline text-primary font-bold">100%</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant opacity-60">Quality Commitment</span>
+</div>
+</div>
+</section>
+<!-- Our Story -->
+<section class="bg-on-surface-variant py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-12">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="w-full lg:w-1/2 space-y-8">
+<span class="text-surface-dim/40 text-[10px] font-bold uppercase tracking-[0.4em]">The WEFTEX Legacy</span>
+<h2 class="font-headline text-4xl md:text-5xl text-surface-dim leading-tight italic">A direct path from fabric to storefront.</h2>
+<div class="space-y-6 text-surface-dim/80 text-lg leading-relaxed font-body">
+<p>Under the banner of the WEFTEX GROUP, we operate on a direct factory model that eliminates the noise of middlemen. This ensures total transparency and control over every stitch.</p>
+<p>Our integrated knitting and dyeing facilities serve as the backbone of our operations, allowing us to provide bespoke textile solutions to high-end brands across Europe and the USA.</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 border border-surface-dim/5 translate-x-4 translate-y-4"></div>
+<img alt="Industrial manufacturing floor" class="relative z-10 w-full h-[600px] object-cover rounded-xl shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]" data-alt="Cinematic shot of a high-end garment factory floor with focused lighting on industrial knitting machines and rolls of rich navy blue fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9ZrcaUlDckycCrO7ypW2-vBQvJMASKBMSLCk0TRJUYCznuh6ibzfs5ecDKSUlAYPASTJ7IY3H261th73EYixSieryefbHt3gljD12kxVcdaFLnLEUqb7unuvvZYGa_rYqDHgg5rjhaLqZMuy_FJpeCda8ueaWKLo2r9pJIOzbxRTldJgJ2l78aqk0P-A0aN5Xlq2RR6TvZXSn4mg9cSZAG8SRRKzwoo9xqGTbA5cjLtuykyhWg0wTKn5TrlLOOopcDZ51kNFVbxY"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Work Directly With Us -->
+<section class="bg-surface py-32">
+<div class="max-w-7xl mx-auto px-12">
+<div class="text-center mb-24 space-y-4">
+<h2 class="font-headline text-4xl text-primary italic">Vertical Integration Advantages</h2>
+<div class="w-24 h-px bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">payments</span>
+<h3 class="font-headline text-2xl text-on-surface">Cost Savings</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Direct manufacturing pricing by removing trading house margins and overheads.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">precision_manufacturing</span>
+<h3 class="font-headline text-2xl text-on-surface">Custom Manufacturing</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Bespoke technical specifications tailored to your brand's unique design language.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">apparel</span>
+<h3 class="font-headline text-2xl text-on-surface">Free Samples</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Experience our craftsmanship firsthand with complimentary prototyping services.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">fact_check</span>
+<h3 class="font-headline text-2xl text-on-surface">Quality Inspections</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Rigorous multi-stage QA protocols ensuring every shipment meets international standards.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">public</span>
+<h3 class="font-headline text-2xl text-on-surface">Global Shipping</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Streamlined logistics and freight management for reliable delivery across continents.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">handshake</span>
+<h3 class="font-headline text-2xl text-on-surface">Long-Term Partnership</h3>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">We grow with our clients, offering scalability and dedicated account management.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CEO's Message -->
+<section class="bg-surface-container-low py-32 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-5 -translate-y-1/2 translate-x-1/4">
+<span class="material-symbols-outlined text-[40rem] text-primary">format_quote</span>
+</div>
+<div class="max-w-4xl mx-auto px-12 relative z-10">
+<span class="material-symbols-outlined text-primary text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline text-3xl md:text-4xl text-on-surface italic leading-relaxed mb-12">
+                "We believe in sharing ownership with our team members — minimizing complacency and ensuring every order reflects our commitment to excellence."
+            </blockquote>
+<div class="flex items-center gap-6">
+<div class="w-12 h-px bg-primary"></div>
+<div>
+<p class="text-primary font-bold uppercase tracking-widest text-xs">CEO</p>
+<p class="text-on-surface-variant font-headline text-xl">Trendy Threads BD</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Compliance -->
+<section class="bg-on-surface-variant py-32">
+<div class="max-w-7xl mx-auto px-12">
+<div class="flex flex-col lg:flex-row gap-20">
+<div class="w-full lg:w-1/2 space-y-8">
+<h2 class="font-headline text-4xl text-surface-dim italic">Responsible Production</h2>
+<p class="text-surface-dim/80 text-lg leading-relaxed">Our dedication to social compliance is the cornerstone of our factory operations. We adhere to the most stringent international labor standards, ensuring a safe, equitable, and empowering environment for our 2,000+ artisans.</p>
+<div class="grid grid-cols-2 gap-8 pt-8">
+<div class="border-l border-surface-dim/10 pl-6 py-2">
+<p class="text-surface-dim font-bold text-2xl">Ethical</p>
+<p class="text-surface-dim/60 text-xs uppercase tracking-widest mt-1">Labor Practices</p>
+</div>
+<div class="border-l border-surface-dim/10 pl-6 py-2">
+<p class="text-surface-dim font-bold text-2xl">Safe</p>
+<p class="text-surface-dim/60 text-xs uppercase tracking-widest mt-1">Work Environment</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface-dim/5 flex flex-col items-center justify-center p-8 space-y-4">
+<span class="material-symbols-outlined text-surface-dim text-5xl">verified_user</span>
+<p class="text-[10px] text-surface-dim font-bold uppercase tracking-tighter text-center">BSCI COMPLIANT</p>
+</div>
+<div class="aspect-square bg-surface-dim/5 flex flex-col items-center justify-center p-8 space-y-4">
+<span class="material-symbols-outlined text-surface-dim text-5xl">eco</span>
+<p class="text-[10px] text-surface-dim font-bold uppercase tracking-tighter text-center">OEKO-TEX CERTIFIED</p>
+</div>
+<div class="aspect-square bg-surface-dim/5 flex flex-col items-center justify-center p-8 space-y-4">
+<span class="material-symbols-outlined text-surface-dim text-5xl">diversity_3</span>
+<p class="text-[10px] text-surface-dim font-bold uppercase tracking-tighter text-center">SEDEX MEMBER</p>
+</div>
+<div class="aspect-square bg-surface-dim/5 flex flex-col items-center justify-center p-8 space-y-4">
+<span class="material-symbols-outlined text-surface-dim text-5xl">factory</span>
+<p class="text-[10px] text-surface-dim font-bold uppercase tracking-tighter text-center">ACCORD MEMBER</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA Strip -->
+<section class="bg-surface py-24 border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface italic">Ready to Start Your Order?</h2>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 font-bold uppercase tracking-widest text-xs transition-all duration-300 hover:scale-105">
+                    Request Free Sample
+                </button>
+<button class="border border-primary text-primary px-8 py-4 font-bold uppercase tracking-widest text-xs transition-all duration-300 hover:bg-primary hover:text-on-primary">
+                    Contact Our Team
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#040f1b] w-full pt-20 pb-10 border-t border-[#d0c5b2]/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-[#d0c5b2] font-['Newsreader'] italic text-xl">Global Atelier</span>
+<p class="mt-4 text-[#d0c5b2]/40 text-[10px] font-['Manrope'] uppercase tracking-widest leading-relaxed">
+                    Setting the standard for precision manufacturing and ethical sourcing in the garment industry.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#c8a84b] font-['Manrope'] uppercase tracking-widest text-[10px] font-bold">Quick Links</p>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Sustainability Report</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Ethical Sourcing</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Factory Locations</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#c8a84b] font-['Manrope'] uppercase tracking-widest text-[10px] font-bold">Documentation</p>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Technical Specs</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Privacy Policy</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#c8a84b] font-['Manrope'] uppercase tracking-widest text-[10px] font-bold">Locations</p>
+<p class="text-[#d0c5b2]/60 font-['Manrope'] uppercase tracking-widest text-[10px]">Dhaka HQ, Bangladesh</p>
+<p class="text-[#d0c5b2]/60 font-['Manrope'] uppercase tracking-widest text-[10px]">London Showroom, UK</p>
+<p class="text-[#d0c5b2]/60 font-['Manrope'] uppercase tracking-widest text-[10px]">New York Office, USA</p>
+</div>
+</div>
+<div class="mt-20 border-t border-[#d0c5b2]/5 pt-10 text-center px-12">
+<p class="text-[#d0c5b2]/40 text-[10px] font-['Manrope'] uppercase tracking-widest">© 2024 Global Atelier Manufacturing Group. All rights reserved. Precision in every stitch.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Factory Showcase | ATELIER GLOBAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#16202e",
+                        "on-primary-container": "#4f3d00",
+                        "primary-container": "#c8a84b",
+                        "surface-dim": "#091421",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface": "#091421",
+                        "on-primary-fixed": "#241a00",
+                        "inverse-on-surface": "#27313f",
+                        "primary": "#e5c363",
+                        "on-secondary-container": "#b6b5b4",
+                        "outline": "#98907e",
+                        "surface-container-highest": "#2b3544",
+                        "primary-fixed": "#ffe08c",
+                        "outline-variant": "#4d4637",
+                        "on-tertiary-container": "#414039",
+                        "error-container": "#93000a",
+                        "surface-bright": "#2f3a48",
+                        "secondary-container": "#474747",
+                        "surface-tint": "#e5c363",
+                        "on-tertiary": "#32302a",
+                        "on-error": "#690005",
+                        "surface-container-high": "#202b38",
+                        "background": "#091421",
+                        "on-primary": "#3d2f00",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-tertiary-fixed": "#1d1c16",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "tertiary-fixed": "#e7e2d9",
+                        "inverse-primary": "#745b00",
+                        "on-background": "#d8e3f6",
+                        "tertiary": "#cbc6be",
+                        "surface-variant": "#2b3544",
+                        "error": "#ffb4ab",
+                        "surface-container-low": "#111c29",
+                        "on-tertiary-fixed-variant": "#494740",
+                        "on-primary-fixed-variant": "#584400",
+                        "surface-container-lowest": "#040f1b",
+                        "secondary": "#c8c6c6",
+                        "primary-fixed-dim": "#e5c363",
+                        "on-surface": "#d8e3f6",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary": "#303030",
+                        "tertiary-fixed-dim": "#cac6be",
+                        "inverse-surface": "#d8e3f6",
+                        "on-surface-variant": "#d0c5b2",
+                        "tertiary-container": "#afaba3",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAu-Zt-JRokoMjWmgqVN5su2yy2Z3JsgLNmMF9yqpqLbPoBCoJybj3IIlgcXg1qFJOzwNABHVG-BtcRcpdR_VlULNHIywlEQMZKEfqIObscqKlZxQTOjpvORUxepMGu37Rvf84puGnunJGdYixCUiLY4WihNs_Z4kGbFwoavB4M6FOr8McPMhLOo-BFplneTEAAlEZhu7xQueBCcU0d0aWIS3viOo2dlv276oWEKrz-X4IZKb_fit2UAHjbpQGnNl_hs8qKu5yenCA)
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#091421]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(4,15,27,0.4)] flex justify-between items-center px-12 py-6 max-w-full font-['Newsreader'] tracking-tighter">
+<div class="text-2xl font-bold tracking-widest text-[#e5c363] uppercase">ATELIER GLOBAL</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors hover:scale-x-105 transition-transform duration-300" href="#">Home</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors hover:scale-x-105 transition-transform duration-300" href="#">Shop</a>
+<a class="text-[#e5c363] border-b-2 border-[#e5c363] pb-1 hover:scale-x-105 transition-transform duration-300" href="#">Factory</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors hover:scale-x-105 transition-transform duration-300" href="#">About Us</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors hover:scale-x-105 transition-transform duration-300" href="#">Contact Us</a>
+<a class="text-[#d0c5b2] hover:text-[#e5c363] transition-colors hover:scale-x-105 transition-transform duration-300" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-6 text-[#e5c363]">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">person</span>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Factory Overview" class="w-full h-full object-cover brightness-50 contrast-125" data-alt="cinematic wide angle shot of a modern textile factory with rhythmic machinery lines and dramatic moody blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChxS8LMDW8wbDVuumiFALzDNTJktZni5BYKMt-11PycTRUQ4Hfia8apjsG52zG1UMx3qVx220N3Mpmt8bwGYXQ9-cbRt82OAVRkZe9WLAbfu8x4LhiO1NThQFTJwSzSHI_xwXckoK7MUOUrmxlITIFvyqkCPo6rN1XxIonpXMJJQZXA0e-AXRszWA5Y4m6aoHtzI3VueHiZ1k3N5G4fe1_dG4fmkKU9iK_JGnSwEtC38PDMnKXMZ68fIxzq0-scKFSDTx4brZ9Goo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 md:px-24 max-w-4xl">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-[1.1] tracking-tight mb-8">
+                    Built for Scale. <br/>
+<span class="text-primary italic">Engineered for Quality.</span>
+</h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl font-light leading-relaxed">
+                    A vertical ecosystem where raw fiber transforms into high-performance garments. Our Dhaka-based atelier integrates every stage of production for unparalleled oversight.
+                </p>
+</div>
+</section>
+<!-- Stats Strip -->
+<section class="bg-surface-container-lowest py-16 px-12 border-y border-outline-variant/15">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-12 text-center">
+<div class="space-y-2">
+<div class="text-primary font-headline text-4xl font-bold">3</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">Facilities</div>
+</div>
+<div class="space-y-2">
+<div class="text-primary font-headline text-4xl font-bold">Knitting</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">Own Unit</div>
+</div>
+<div class="space-y-2">
+<div class="text-primary font-headline text-4xl font-bold">Dyeing</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">Own Unit</div>
+</div>
+<div class="space-y-2">
+<div class="text-primary font-headline text-4xl font-bold">In-House</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">Print &amp; Emb</div>
+</div>
+<div class="space-y-2">
+<div class="text-primary font-headline text-4xl font-bold">2</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-[0.2em]">Continents</div>
+</div>
+</div>
+</section>
+<!-- Facility Tour -->
+<section class="py-24 space-y-32 px-12 overflow-x-hidden">
+<!-- Section A -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-full h-full border border-primary/20 -z-10 rounded-xl"></div>
+<img alt="Knitting &amp; Dyeing" class="rounded-xl w-full aspect-[4/3] object-cover shadow-2xl" data-alt="industrial circular knitting machines producing white cotton jersey fabric in a bright organized factory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHquxLv8QGcpQTSVl_4Z8cnF-tmIvNgTXZl-GDmwEqcOdiW6rdYyu2HHCNIDz8hvVJ7GW2cn0_hF_KgpvvL5L3eLDKQIA62CijwXP5xLKyRCl95Tjq5PJ7WCe5laY1TbqnzfvExT1Uu0CM1GEVkyetCao4Kj9af-UhVg-eWl8RcKyTrK_COvNSY-bwg_TCpDIXKYHYbBmDdAl2LblfRwapQgjG0t_I8-th-WdIdyv6zsMq6e3x95DHsU1c-urjhEGHeeb0e-Ro-T8"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] block mb-4">Precision Mastery</span>
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Knitting &amp; Dyeing</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light mb-8">
+                        Our circular knitting facility produces over 20 tons of premium jersey and interlock daily. Paired with our state-of-the-art dyeing lab, we ensure color consistency and fabric longevity through Swiss-engineered technology.
+                    </p>
+</div>
+</div>
+<!-- Section B -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -right-4 w-full h-full border border-primary/20 -z-10 rounded-xl"></div>
+<img alt="Cutting &amp; Sewing" class="rounded-xl w-full aspect-[4/3] object-cover shadow-2xl" data-alt="modern garment sewing line with multiple industrial sewing machines and workers in a clean high-ceiling industrial space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV6hVlssdag6ZTJXpJ6xBOvHtTFH3eFFea3auDb0wxg6aHMaD5bSLlsv3yrxPvQUW2XpsM4XS1iD2KVDbsaBep_KEbC8oCmv4T2kSdTGCdYIaO4WkOXFpwnuLKHoE8PiXem-bUI5NwmC6Qt-bSFsiPtyK2bCEas4QZUXeLKluLoxwdVXSwBqb0P9CalONRhKUAL4vPGywZZwYbv63DRxce5zRdNvEOz8c9WX130l1ZBvcUVmCAJaL6Z5fjJb2WF-ubcprhhGmHxvM"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] block mb-4">The Assembly Line</span>
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Cutting &amp; Sewing</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light mb-8">
+                        Precision starts at the cutting table. With automated CAD/CAM spreading and cutting systems, we minimize waste and maximize structural integrity before garments reach our 40 sewing lines.
+                    </p>
+</div>
+</div>
+<!-- Section C -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-full h-full border border-primary/20 -z-10 rounded-xl"></div>
+<img alt="Printing &amp; Embroidery" class="rounded-xl w-full aspect-[4/3] object-cover shadow-2xl" data-alt="close up of multi-head embroidery machine stitching complex gold thread patterns on dark luxury fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY5luU6WulBmrNf9bBdAu90GgHFEqAv4AgY52xl2m_wqU0Tk5FdxRZcYyKV5KV3m2bG6ZEwa5eqPjqyqad8Mj2PEczme1BkBsfKIWOLsdm7bVFt4GU8IA9MlsQ3umZB8D09qz3lf5I9wsXf1-Dc-fkVuXoxPesfluBF7YxdKrIj73n6vQfCrA1bhPAxVWyeI8A0u0K5FJlFh_RF0Qq7LjsDmImje25ZwihfBe3jTD2EBpcql9V6ZtDA8iTiWCsPr5QFw1qklFWhzQ"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] block mb-4">Artistic Finishes</span>
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Printing &amp; Embroidery</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light mb-8">
+                        Elevate designs with our high-definition screen printing and multi-head Tajima embroidery. From reactive dyes to high-density puff prints, our embellishment unit brings tactile depth to every piece.
+                    </p>
+</div>
+</div>
+<!-- Section D -->
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-4 -right-4 w-full h-full border border-primary/20 -z-10 rounded-xl"></div>
+<img alt="Quality Control Lab" class="rounded-xl w-full aspect-[4/3] object-cover shadow-2xl" data-alt="quality control specialist in a lab setting testing fabric tensile strength using precision industrial measuring equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA02enc1QCIz9X5gVS3siB2iNY4zFIbO8GB-SQP6R2nlTn_RVWI1-e7RfKP1HYtatDlQcLnAHZ-HSwyOCLa84S17EdmkT6lOe8VOOdWoCyloKa026SQae-ex9V4vTVcZRBkqZ-9qzjAPQnd_kAUWy27SuG8HCAIcnWqYZlPx8lNZ_OdEtI5tNOuRAANL1DjylHCPIaBoIT5m-kj4q-BixQfOPT5ZgI3-L5Qbrm-glDcNeMgQFh05S0JhW0Qiej2I9rOnG68edZH2pQ"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] block mb-4">The Standard</span>
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Quality Control Lab</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light mb-8">
+                        Our AQL 1.5 standard is maintained through rigorous testing. Shrinkage, pilling, wash-fastness, and tensile strength are monitored in our internal laboratory to ensure global compliance.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Production Process Timeline -->
+<section class="bg-surface-container py-24 px-12 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl mb-16 text-center">Seamless Workflow</h2>
+<div class="flex flex-wrap lg:flex-nowrap justify-between gap-8">
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">01</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4 overflow-hidden"><div class="h-full bg-primary w-1/3"></div></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Fabric Sourcing</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">02</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Knitting/Dyeing</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">03</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Cutting</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">04</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Sewing</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">05</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Printing</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">06</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">QC Inspection</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">07</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4"></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Packing</p>
+</div>
+<div class="flex-1 min-w-[140px] group">
+<div class="text-primary font-headline text-6xl mb-4 transition-transform group-hover:-translate-y-2">08</div>
+<div class="h-0.5 w-full bg-primary/20 mb-4 overflow-hidden"><div class="h-full bg-primary w-1/3 ml-auto"></div></div>
+<p class="text-on-surface font-label text-xs tracking-wider uppercase">Export</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Inspection Detail -->
+<section class="bg-on-surface-variant/90 py-24 px-12">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-on-background text-4xl md:text-5xl mb-4">The Inspection Protocol</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface p-10 border border-primary/40 rounded-sm hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">architecture</span>
+<h3 class="font-headline text-2xl mb-4 text-on-surface">Raw Material</h3>
+<p class="text-on-surface-variant font-light">Every yarn shipment undergoes strict tensile testing and color lot verification before entering the knitting phase.</p>
+</div>
+<div class="bg-surface p-10 border border-primary/40 rounded-sm hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">monitoring</span>
+<h3 class="font-headline text-2xl mb-4 text-on-surface">In-Process</h3>
+<p class="text-on-surface-variant font-light">Inline inspectors monitor every 10th garment at each sewing station to catch deviations before they become defects.</p>
+</div>
+<div class="bg-surface p-10 border border-primary/40 rounded-sm hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified</span>
+<h3 class="font-headline text-2xl mb-4 text-on-surface">Final Inspection</h3>
+<p class="text-on-surface-variant font-light">A dedicated QC floor performs 100% garment inspection and independent AQL audits before final packing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Compliance Section -->
+<section class="bg-surface-container-lowest py-24 px-12 relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Social Compliance is Core to <span class="italic">Who We Are</span></h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto font-light">
+                    Our facilities are LEED certified, ensuring our environmental footprint is minimized while maintaining OEKO-TEX and BSCI standards for worker welfare and safety.
+                </p>
+<div class="flex flex-wrap justify-center gap-12 opacity-70 hover:opacity-100 transition-opacity">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-5xl">eco</span>
+<span class="text-[0.6rem] tracking-[0.2em] uppercase">LEED Silver</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-5xl">groups</span>
+<span class="text-[0.6rem] tracking-[0.2em] uppercase">BSCI Audited</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-5xl">check_circle</span>
+<span class="text-[0.6rem] tracking-[0.2em] uppercase">OEKO-TEX</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-5xl">public</span>
+<span class="text-[0.6rem] tracking-[0.2em] uppercase">Fair Trade</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="py-32 px-12 bg-surface text-center">
+<div class="max-w-3xl mx-auto border border-primary/10 p-16 relative">
+<div class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-primary"></div>
+<div class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-primary"></div>
+<h2 class="font-headline text-4xl md:text-6xl mb-10">Interested in Visiting Our Factory?</h2>
+<button class="bg-primary text-on-primary px-12 py-5 font-label uppercase tracking-[0.2em] text-sm hover:scale-x-105 transition-transform duration-300 shadow-xl">
+                    Schedule a Factory Tour
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#040f1b] w-full border-t border-[#d0c5b2]/15">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-[#e5c363] font-bold mb-6">THE GLOBAL ATELIER.</div>
+<p class="text-[#d0c5b2]/60 font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] leading-relaxed">
+                    Industrial excellence through vertical integration.
+                </p>
+</div>
+<div>
+<div class="text-[#e5c363] text-[0.75rem] uppercase tracking-[0.1em] mb-6">Navigation</div>
+<div class="flex flex-col gap-3">
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Home</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Shop</a>
+<a class="text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Factory</a>
+</div>
+</div>
+<div>
+<div class="text-[#e5c363] text-[0.75rem] uppercase tracking-[0.1em] mb-6">Resources</div>
+<div class="flex flex-col gap-3">
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Sustainability Report</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Global Logistics</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+<div>
+<div class="text-[#e5c363] text-[0.75rem] uppercase tracking-[0.1em] mb-6">Legal</div>
+<div class="flex flex-col gap-3">
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Privacy Policy</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#e5c363] font-['Manrope'] text-[0.75rem] uppercase tracking-[0.1em] hover:translate-x-1 transition-transform" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#d0c5b2]/5 text-center text-[#d0c5b2]/40 font-['Manrope'] text-[0.65rem] uppercase tracking-[0.2em]">
+            © 2024 THE GLOBAL ATELIER. INDUSTRIAL EXCELLENCE.
+        </div>
+</footer>
+</body></html>

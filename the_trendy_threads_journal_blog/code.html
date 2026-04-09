@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#32302a",
+                    "surface-dim": "#091421",
+                    "primary": "#e5c363",
+                    "on-tertiary-container": "#414039",
+                    "outline": "#98907e",
+                    "surface-variant": "#2b3544",
+                    "surface-container-high": "#202b38",
+                    "on-primary-fixed": "#241a00",
+                    "secondary-container": "#474747",
+                    "tertiary": "#cbc6be",
+                    "primary-fixed-dim": "#e5c363",
+                    "outline-variant": "#4d4637",
+                    "secondary": "#c8c6c6",
+                    "on-surface": "#d8e3f6",
+                    "surface-container-low": "#111c29",
+                    "primary-container": "#c8a84b",
+                    "inverse-surface": "#d8e3f6",
+                    "tertiary-container": "#afaba3",
+                    "on-tertiary-fixed": "#1d1c16",
+                    "surface-tint": "#e5c363",
+                    "on-secondary-container": "#b6b5b4",
+                    "surface-container": "#16202e",
+                    "on-primary-fixed-variant": "#584400",
+                    "surface-bright": "#2f3a48",
+                    "secondary-fixed": "#e4e2e1",
+                    "primary-fixed": "#ffe08c",
+                    "on-tertiary-fixed-variant": "#494740",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-primary-container": "#4f3d00",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-lowest": "#040f1b",
+                    "on-secondary-fixed-variant": "#474747",
+                    "tertiary-fixed-dim": "#cac6be",
+                    "inverse-primary": "#745b00",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed": "#e7e2d9",
+                    "surface-container-highest": "#2b3544",
+                    "on-surface-variant": "#d0c5b2",
+                    "inverse-on-surface": "#27313f",
+                    "on-secondary": "#303030",
+                    "on-background": "#d8e3f6",
+                    "error-container": "#93000a",
+                    "surface": "#091421",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "on-primary": "#3d2f00",
+                    "on-error": "#690005",
+                    "background": "#091421"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<div class="fixed inset-0 grain-overlay z-[60]"></div>
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#091421]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<span class="text-2xl font-bold tracking-tighter text-[#d0c5b2] font-headline uppercase">ATELIER GLOBAL</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-colors font-label text-[0.75rem] tracking-widest uppercase" href="#">Collections</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-colors font-label text-[0.75rem] tracking-widest uppercase" href="#">Production</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-colors font-label text-[0.75rem] tracking-widest uppercase" href="#">Logistics</a>
+<a class="text-[#e5c363] border-b-2 border-[#e5c363] pb-1 font-label text-[0.75rem] tracking-widest uppercase" href="#">Editorial</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-colors font-label text-[0.75rem] tracking-widest uppercase" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 text-sm font-bold hover:scale-x-105 transition-transform duration-300">Request Quote</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Page Hero -->
+<section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20">
+<div class="bg-on-surface-variant/5 py-24 px-12 relative overflow-hidden border-l-4 border-primary">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface-variant font-bold tracking-tight mb-6 relative z-10">
+                    The Trendy Threads Journal
+                    <span class="block w-48 h-1 bg-primary mt-4"></span>
+</h1>
+<p class="text-xl text-on-surface-variant/80 max-w-2xl font-body leading-relaxed z-10 relative">
+                    Industry insights, manufacturing guides, and garment sourcing knowledge for global buyers in the evolving textile landscape.
+                </p>
+</div>
+</section>
+<!-- Featured Article -->
+<section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 overflow-hidden bg-surface-container-high group">
+<div class="relative h-[400px] lg:h-full overflow-hidden">
+<img alt="Featured Article cover" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of high-end tailoring fabric with industrial sewing machinery in soft bokeh background at an atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGtkgNHhB9nzz2h4uIp34odxrvP84Cyx1jlxhh370x3VOYkcVjX1hmiZWbX1GIQdHIxn0XI3EVaCc9dpQVTwfKyC7plKqSsCCEbeFrmwGydrm17JEOnVP60aZqhrmHFWbRVhukeL610S-7cU1ogRN7o9oG3oamIk8wZirVPvWNwcihY03csGy-1sHTc2QONUef7sBH0QcsvpLccrrGMs0zAAP0SKkBQHlRaJ_KvAc5y6kBImIkpXx8lHhsYoeAaePDeGVQwPsSUu8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-dim/40 to-transparent"></div>
+</div>
+<div class="p-8 md:p-16 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="w-8 h-px bg-primary"></span>
+<span class="text-primary font-label uppercase tracking-widest text-xs font-bold">Featured</span>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6 leading-tight font-bold">The Future of Circular Manufacturing in South Asia</h2>
+<p class="text-on-surface-variant/70 text-lg mb-8 leading-relaxed font-body">
+                        Exploring how sustainable loops and ethical waste management are redefining the production floors of modern garment factories.
+                    </p>
+<div class="flex items-center gap-6 mb-10 text-sm text-on-surface-variant/50 font-label uppercase tracking-wider">
+<span>By Arshad Rahim</span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+<span>May 12, 2024</span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+<span>12 Min Read</span>
+</div>
+<a class="inline-flex items-center gap-3 text-primary font-bold uppercase tracking-widest text-sm group/link" href="#">
+                        Read Article 
+                        <span class="material-symbols-outlined transition-transform duration-300 group-hover/link:translate-x-2">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Blog Grid & Sidebar -->
+<section class="px-6 md:px-12 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-16">
+<!-- Left Column: Article Grid -->
+<div class="lg:col-span-3">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-16 gap-x-8">
+<!-- Article Card 1 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Manufacturing Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Industrial rolls of colorful fabric stacked in a bright factory warehouse setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBin1pQm_GzllMRxf1DVO1vH-m3bBZ5NoEdav0e4S_DMwjlYjlfn8IHiflHUNzQ1OabflRIx0uYNRzqNsmgTn0j5yZQ_vEjHu4Lw_ZQC3ItEWxzLvqv7y55MvgrcEzzrbR-4Mngf9sjORHR0Jjl7Ojnqdv8K7W14SXJ02IgeBicEPD_TiJIDOKpeKH3ZyhUhemQonm09AA3mMaTEKnvn4TTkLJm-j0NibGXlzeiycTlN0OykO28_dbUJ-f-dbitlJidiCleuANEns8"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Manufacturing</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">Optimizing Lead Times: The Logistics of Speed</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">How modern data analytics are shaving weeks off the standard production cycle without compromising craft.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">April 28, 2024</time>
+</article>
+<!-- Article Card 2 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Compliance Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a handshake between two professionals in business suits with a garment factory blueprint on the table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGR3EAzGdcgbITi2Kaoh7qiIHQ8_7ISj8xOIZR30DP4Mv1_u62UscfHOtT1Bl8Q68M0Fx1_3JJPYuQrjABbOf3UfLvSTw6WDMmIK-ytmQMxxXap_URrNYt5gcvNG_jQs4lQSHAnwiXHkubC9N6wbZU0TYDUqNJL9g7h2ICX3Ve85ncCRi_lBJW9XmcVlgLlWkT8ro2yg1VRGyu963Wfe-KkArKtH_TBFHi3mka38BBklMuJXHRpS0qxRQSLkQNNuHFseI6PRxN5J4"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Compliance</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">The New Standards of Global Labor Ethics</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">A comprehensive guide to the upcoming transparency mandates affecting international garment trade.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">April 22, 2024</time>
+</article>
+<!-- Article Card 3 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Fabric Knowledge Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography of raw organic cotton fibers with soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCznswXR7NjtVp7U14zPIlcC1fkDFZNAx4mVrbtosPhrlQCeNQldur-jnTrgvQWQigSY9cP1Ejf8vfHX7aq9K216KmWXZmEIUoYuikTGZeZ6_OpR04jv4YENP0YpRXp1XniuUjYy82YTVpFpWTqyJSTASTkbOudx9QLGLWJSbWiRop2HpvgzyqwDaZKcHZYQv9kMcwzskfenjiom35ffd9L1qexI7fSzAJihpSi2RdV53335BnavIizDJ5N6qEmSiDSvmHiebxPXcs"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Fabric Knowledge</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">Organic vs. Recycled: Deciphering the Labels</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">Understanding the environmental footprint of next-generation textile materials and their longevity.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">April 15, 2024</time>
+</article>
+<!-- Article Card 4 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Export Guide Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Densely packed shipping containers at a busy international port during sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnMit7MdMqPW4BDjl7mFMLWwJET-ezQEVbbsX-3cwHUa0luE9EhS3YZATzA6pS8mk3C_EBxpMzM_zfpcpyBBKLHkgtOvOczN19GMXyh6MlsIZjz0q9x05tD9A7CAbYhOb6b7TWttuL3mYqljKvMzNL4cc-2PlhydoT_HqPHGsIyyoWR68Eql2VBBL8ljek4ts8j0PVEdS2xmMYhdPxKRGv0nCnn06kubRhJoKxx4I_v4YZS6_8NqtqCz7VapF5GrB8KANZnFgBQ28"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Export Guide</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">Navigating Trade Tariffs in 2024</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">How regional trade agreements are shifting the sourcing maps for major European retailers.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">April 08, 2024</time>
+</article>
+<!-- Article Card 5 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Industry News Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist garment rack with white shirts in a bright professional studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Ch_730PwKyckJY912hQ3TeV4XcoGJBaZ3b-D8vFLkXjPjYlfJVI5QLHr-EakQ4PEcM2o5Bw8CDbmGrBboYszWAYC1wgDLWZuiKVrJ5rIW4XZjhWb0q27izOAlL-qLB-JQR7879pCrBZ-Y1xZs_VsGD08wUlGHpIEIYFZcMgr8HxRAuvkROGXIV-1ceHCWPGPdlCR9SMt-Gy6llhJfalethAavxqGLraMxeOLFm6gVi9iqUAh3LXvHkoM2z48dKeowKD60Di9BIc"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Industry News</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">The Rise of Bespoke Manufacturing</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">Why mass customization is becoming the preferred model for emerging boutique brands.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">March 30, 2024</time>
+</article>
+<!-- Article Card 6 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden mb-6 rounded-xl relative group">
+<img alt="Fabric Knowledge Article" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Draped grey fabric on a mannequin in a moody high-end fashion design studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH2wgY2GYpUB0p_CtWwmedNW7A7uveYr_Qiou6V2TBtDBWMcEj5yu7Rd_EHU8PBNxoMRjwblFy43USLZGmtxboATZ4EU6XiW4s3n1C0kgX1zPoxaBPQkd15Tp26VijIWoWQjvcVfvBJvbhO9ecZedfLY3fD-p3Qe9M0LSPFZHkuCrFfuCDKGrRfBGUZGeRseE0iPd49CBuThKtPfqwy07AehmPARu52uuk0SB2x7a73mmewp9gVrPhHOJxe0qJ3hCEbhdR5jPyVYo"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1">Fabric Knowledge</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface hover:text-primary transition-colors cursor-pointer">Technical Fabrics: Beyond the Basics</h3>
+<p class="text-on-surface-variant/70 text-sm mb-6 leading-relaxed flex-grow">A deep dive into performance textiles and moisture-wicking technology for activewear.</p>
+<time class="text-[10px] text-on-surface-variant/40 font-label uppercase tracking-widest">March 15, 2024</time>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant transition-colors">3</button>
+<span class="text-on-surface-variant/40">...</span>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant transition-colors">12</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant hover:border-primary text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Sidebar -->
+<aside class="space-y-16">
+<!-- Popular Articles -->
+<div>
+<h4 class="font-headline text-xl text-on-surface font-bold mb-8 flex items-center gap-4">
+                        Popular Articles
+                        <span class="flex-grow h-px bg-outline-variant"></span>
+</h4>
+<div class="space-y-8">
+<div class="group cursor-pointer">
+<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest block mb-2">01</span>
+<h5 class="text-on-surface font-headline font-bold leading-tight group-hover:text-primary transition-colors">Risk Management in the Apparel Supply Chain</h5>
+</div>
+<div class="group cursor-pointer">
+<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest block mb-2">02</span>
+<h5 class="text-on-surface font-headline font-bold leading-tight group-hover:text-primary transition-colors">The 2024 Sourcing Guide for European Brands</h5>
+</div>
+<div class="group cursor-pointer">
+<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest block mb-2">03</span>
+<h5 class="text-on-surface font-headline font-bold leading-tight group-hover:text-primary transition-colors">Digital Twins: Transforming Garment Prototyping</h5>
+</div>
+</div>
+</div>
+<!-- Categories -->
+<div>
+<h4 class="font-headline text-xl text-on-surface font-bold mb-8 flex items-center gap-4">
+                        Browse by Category
+                        <span class="flex-grow h-px bg-outline-variant"></span>
+</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface-variant/70 hover:text-primary transition-colors cursor-pointer font-label text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Manufacturing
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant/70 hover:text-primary transition-colors cursor-pointer font-label text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Export Guide
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant/70 hover:text-primary transition-colors cursor-pointer font-label text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Fabric Knowledge
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant/70 hover:text-primary transition-colors cursor-pointer font-label text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Industry News
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant/70 hover:text-primary transition-colors cursor-pointer font-label text-xs uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Compliance
+                        </li>
+</ul>
+</div>
+<!-- Subscribe Box -->
+<div class="bg-surface-container-highest p-8 border border-outline-variant/30">
+<h4 class="font-headline text-xl text-on-surface font-bold mb-4">Subscribe for Industry Updates</h4>
+<p class="text-on-surface-variant/60 text-sm mb-6">Weekly insights on market trends and production innovation delivered to your inbox.</p>
+<div class="space-y-4">
+<input class="w-full bg-transparent border-b border-outline-variant py-3 px-1 text-on-surface placeholder:text-on-surface-variant/30 focus:outline-none focus:border-primary transition-colors font-body" placeholder="Email Address" type="email"/>
+<button class="w-full bg-primary text-on-primary font-bold py-4 uppercase tracking-widest text-xs hover:scale-x-[1.02] transition-transform duration-300">Join the Circle</button>
+</div>
+</div>
+</aside>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#040f1b] w-full mt-24 py-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-bold text-[#d0c5b2] font-headline uppercase tracking-tighter">ATELIER GLOBAL</span>
+<p class="mt-6 text-[#d0c5b2]/60 font-body text-sm leading-relaxed">
+                    Leading the frontier of sustainable garment manufacturing for the world's most discerning fashion houses.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-[#e5c363] font-label uppercase tracking-widest text-[0.75rem] font-bold mb-2">Navigation</h6>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-all font-label uppercase tracking-widest text-[0.7rem]" href="#">Sustainability Report</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-all font-label uppercase tracking-widest text-[0.7rem]" href="#">Supply Chain Transparency</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-all font-label uppercase tracking-widest text-[0.7rem]" href="#">Technical Specs</a>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-[#e5c363] font-label uppercase tracking-widest text-[0.75rem] font-bold mb-2">Legal</h6>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-all font-label uppercase tracking-widest text-[0.7rem]" href="#">Privacy Policy</a>
+<a class="text-[#d0c5b2]/60 hover:text-[#d0c5b2] transition-all font-label uppercase tracking-widest text-[0.7rem]" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-[#e5c363] font-label uppercase tracking-widest text-[0.75rem] font-bold mb-2">Contact</h6>
+<p class="text-[#d0c5b2]/60 font-label uppercase tracking-widest text-[0.7rem]">Industrial Zone 04, Dhaka</p>
+<p class="text-[#d0c5b2]/60 font-label uppercase tracking-widest text-[0.7rem]">contact@atelier.global</p>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 mt-20 pt-8 border-t border-white/5">
+<p class="text-[#d0c5b2]/30 font-label uppercase tracking-widest text-[0.65rem] text-center md:text-left">
+                © 2024 Global Atelier Manufacturing. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

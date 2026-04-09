@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#414039",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#d0c5b2",
+                    "inverse-primary": "#745b00",
+                    "surface-container-lowest": "#040f1b",
+                    "tertiary": "#cbc6be",
+                    "on-tertiary": "#32302a",
+                    "on-primary-container": "#4f3d00",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "secondary-fixed": "#e4e2e1",
+                    "error-container": "#93000a",
+                    "on-primary": "#3d2f00",
+                    "error": "#ffb4ab",
+                    "primary-container": "#c8a84b",
+                    "surface-tint": "#e5c363",
+                    "primary": "#e5c363",
+                    "on-background": "#d8e3f6",
+                    "primary-fixed-dim": "#e5c363",
+                    "on-primary-fixed-variant": "#584400",
+                    "inverse-on-surface": "#27313f",
+                    "surface-container-high": "#202b38",
+                    "outline": "#98907e",
+                    "tertiary-container": "#afaba3",
+                    "on-surface": "#d8e3f6",
+                    "surface-container": "#16202e",
+                    "surface-bright": "#2f3a48",
+                    "on-secondary-container": "#b6b5b4",
+                    "tertiary-fixed": "#e7e2d9",
+                    "on-primary-fixed": "#241a00",
+                    "background": "#091421",
+                    "surface-variant": "#2b3544",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "primary-fixed": "#ffe08c",
+                    "surface": "#091421",
+                    "surface-dim": "#091421",
+                    "outline-variant": "#4d4637",
+                    "on-secondary": "#303030",
+                    "surface-container-highest": "#2b3544",
+                    "secondary": "#c8c6c6",
+                    "on-tertiary-fixed-variant": "#494740",
+                    "surface-container-low": "#111c29",
+                    "inverse-surface": "#d8e3f6",
+                    "tertiary-fixed-dim": "#cac6be",
+                    "secondary-container": "#474747",
+                    "on-tertiary-fixed": "#1d1c16",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#474747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCFhdhjhRzRZfM-l4YEsmfNaC3GubQfXqU2pPlhQWLBSpeX1xxy2FFBp9b9cK-YoZ1FcRnxLDUUdMQupnexq6ezuMsknj_ChHQhSzGuBClFga1DDBopKkVI0ZnL6gVqfqt9QljRNlAoO2D3-64jojfGjMmTULn2JSkQ3rZVH0ubQ1UcUNoBCbpgsABSREq5L8p7FQcLeaR5EKpnoL7HjUmUTOacFWusDJ5pTQbg5pNv7-2F4CXmlTGrVOZZMUJpNNovs_w_pD0G-fo)
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md shadow-2xl shadow-slate-950/50 flex justify-between items-center px-12 py-6 w-full">
+<div class="text-2xl font-headline italic text-amber-400">Trendy Threads BD</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-300 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">Home</a>
+<a class="text-amber-400 border-b border-amber-400/50 pb-1 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">Shop</a>
+<a class="text-stone-300 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">Factory</a>
+<a class="text-stone-300 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">About Us</a>
+<a class="text-stone-300 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">Contact Us</a>
+<a class="text-stone-300 font-label uppercase tracking-widest text-xs hover:text-amber-200 transition-all duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary font-label uppercase tracking-widest text-xs px-6 py-3 rounded-DEFAULT hover:scale-105 transition-transform duration-300">
+            Request a Quote
+        </button>
+</nav>
+<main class="pt-24">
+<!-- Page Header -->
+<header class="relative w-full h-[460px] flex flex-col justify-center items-start px-12 bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Close-up of industrial sewing machine stitching high-quality dark denim fabric with precision and dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPEbML0j0QVjtw7CKyJfLPujXK_inGhEoCho6pYCdLqzP3rQ4YhU44_Ukvo-Cfgey0Z64SxNXHieDOxjA2Sr61V7nEXBggEnS7GMxu6AEek-1Egbu4pNXwRPnoHGWwjwIDzRHLIw8RqbqRZSHparQooTsBYOTu1Nip4raKx2fH47KypBVCqoujHUBD1l1O_bO_YcgMMiitpRpCxg8wE2n-d1wktJY2u8CpnAclqTn0LhL2sIFFkVozd-4HCFd-xRpItUOQAvMf72A"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<nav class="flex gap-2 text-xs font-label uppercase tracking-widest text-primary mb-4">
+<span class="opacity-60">Home</span>
+<span class="opacity-60">/</span>
+<span>Shop</span>
+</nav>
+<h1 class="text-5xl md:text-7xl font-headline text-on-surface-variant mb-6 leading-none">Our Product Catalog</h1>
+<p class="text-lg md:text-xl text-on-surface-variant/80 max-w-2xl font-light leading-relaxed">
+                    Premium manufacturing solutions for global retailers. Bulk orders starting from 500 units. Certified sustainable materials and industrial-grade craftsmanship.
+                </p>
+</div>
+</header>
+<!-- Catalog Layout -->
+<div class="flex flex-col md:flex-row min-h-screen">
+<!-- SideNavBar / Filter Panel -->
+<aside class="md:sticky md:top-24 h-fit md:h-[calc(100vh-6rem)] w-full md:w-80 bg-slate-900 border-r border-stone-800/20 flex flex-col py-8 px-8 gap-8">
+<div class="space-y-1">
+<h2 class="text-lg font-headline text-stone-200">Product Filters</h2>
+<p class="text-xs font-label text-stone-400 uppercase tracking-tighter">Refine by Specification</p>
+</div>
+<!-- Filter Groups -->
+<div class="space-y-10 overflow-y-auto pr-2">
+<!-- Categories -->
+<section>
+<h3 class="text-primary font-label text-xs uppercase tracking-widest mb-4 border-b border-outline-variant/30 pb-2">Categories</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-sm border-primary text-primary focus:ring-0 focus:ring-offset-0 bg-transparent" type="checkbox"/>
+<span class="text-sm text-stone-300 group-hover:text-primary transition-colors">Men's Apparel</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-sm border-primary text-primary focus:ring-0 focus:ring-offset-0 bg-transparent" type="checkbox"/>
+<span class="text-sm text-stone-300 group-hover:text-primary transition-colors">Women's Collection</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-sm border-primary text-primary focus:ring-0 focus:ring-offset-0 bg-transparent" type="checkbox"/>
+<span class="text-sm text-stone-300 group-hover:text-primary transition-colors">Children's Wear</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-sm border-primary text-primary focus:ring-0 focus:ring-offset-0 bg-transparent" type="checkbox"/>
+<span class="text-sm text-stone-300 group-hover:text-primary transition-colors">Active &amp; Outerwear</span>
+</label>
+</div>
+</section>
+<!-- Fabric Types -->
+<section>
+<h3 class="text-primary font-label text-xs uppercase tracking-widest mb-4 border-b border-outline-variant/30 pb-2">Fabric Types</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined text-stone-400 text-lg" data-icon="texture">texture</span>
+<span class="text-sm text-stone-300">Organic Cotton</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined text-stone-400 text-lg" data-icon="eco">eco</span>
+<span class="text-sm text-stone-300">Sustainable Linen</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined text-stone-400 text-lg" data-icon="verified">verified</span>
+<span class="text-sm text-stone-300">Recycled Polyester</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined text-stone-400 text-lg" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-sm text-stone-300">Technical Blends</span>
+</label>
+</div>
+</section>
+<!-- Sustainability -->
+<section>
+<h3 class="text-primary font-label text-xs uppercase tracking-widest mb-4 border-b border-outline-variant/30 pb-2">Lead Times</h3>
+<div class="flex flex-col gap-2">
+<div class="bg-slate-800/50 p-3 rounded-lg border border-stone-800/50">
+<span class="material-symbols-outlined text-primary text-sm mb-1 block" data-icon="schedule">schedule</span>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest mb-1">Standard Production</p>
+<p class="text-sm text-stone-200">30-45 Business Days</p>
+</div>
+</div>
+</section>
+</div>
+<div class="mt-auto pt-6">
+<button class="w-full bg-primary text-on-primary py-4 font-label uppercase text-xs tracking-widest hover:brightness-110 transition-all">
+                        Request Bulk Quote
+                    </button>
+</div>
+</aside>
+<!-- Product Grid -->
+<section class="flex-1 bg-[#fcfbf7] text-on-secondary py-16 px-8 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-quality minimalist beige organic cotton jacket displayed on a clean architectural background with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOW8aUiglJq2Tz_hDJ8Kdhxw7hfox2xtU4Se9JkScsYRIiIyF-W_i7-GV5bKLp2Izp6MxDmdRtjs_qecgifolYXY-rqyP-zWO2FsNWIsMKUG1NxOgd3h6VFyFT8AhLkstsKlg6R8QGBpNB41yvckck7N6WLNapgiKiJZBsPxoRHklWqTn7LgXuM2PqYrlIXDpuhS8IWeBkVftStnMvdQ5Uvnf8zc70pWMVgSAn8PK55vu5A96D_rGQ_s2OeDQz22XVT1ld0XIXFRs"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Organic Series</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Heritage Cotton Blazer</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">Structured tailoring meets sustainable organic fibers. Reinforced seams for industrial durability.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+<!-- Product Card 2 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stack of premium heavy-weight knit sweaters in neutral tones, showing intricate texture and high-quality construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBop8ecw-7je_kBbbjwWg8b4qBsXfKAge1eZvPCDSLNA6astXDYj-0gU19OkXNGNfVu35dCxbzb7Em5cYOmk-tlSqPIomuqGVN1DhdQRTeCedtvpvpy_Cd3lf5sKkow_oXL0az-9RA1e_miHyIB6pIBIOdryYdng4dsCh3uA6xvDBD_2NWqOz3zxro1MNpK1D0_1i41qPloH4PvNAlMPOCYSxXVgn2JqldHkUinWC_SUMGcYQ4UiytMh3jxVGP0gYg6WTQB_O6y774"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Knitwear</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Architectural Knit Pull</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">High-gauge technical knit designed for shape retention and thermal efficiency in cold climates.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+<!-- Product Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional studio shot of a dark charcoal wool overcoat with premium finishing and sharp lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVHCjX95Y5JZkuYSVkOYK889cQodylKamdjGH7JXRMYy4-s3Rzc950hztbF4aToSXrEXMDX47H971fGSFAsmVmezoTx1f_pfFKbZviCnwPTV_k4c03imngVrzN_Gcd3Hr73WHz8y1e8NxgtunDkwLW_CtcirhygkbnkCNSeDXQXMcVMyPP37bXpTm3H7xHsHynVYPqeiSVPp2GRtu2lGyFNw0Voe8s5v-BL6IGxGTrm-yg85GwK_hP-Vy7umPXgrAUjbTkt8R8FO0"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Outerwear</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Industrial Wool Overcoat</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">Heavyweight wool blend featuring water-resistant treatment and bespoke internal finishing.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+<!-- Mid-page Featured Banner (Full Span) -->
+<div class="col-span-1 lg:col-span-3 py-12">
+<section class="bg-surface-container-high rounded-xl p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+<div class="absolute inset-0 bg-[linear-gradient(45deg,rgba(229,195,99,0.05)_0%,transparent_70%)]"></div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-3xl md:text-5xl font-headline text-on-surface mb-6">Need a Custom Design? We manufacture to your exact specifications.</h2>
+<p class="text-on-surface/70 font-light mb-8">From custom patterns to proprietary fabric blends, our atelier can scale your vision into high-volume production.</p>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-sm font-label uppercase tracking-widest text-xs font-bold hover:px-12 transition-all duration-500 flex items-center gap-4">
+                                    Send Your Tech Pack
+                                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="relative z-10 w-full md:w-1/3 aspect-square bg-slate-900/50 backdrop-blur-sm rounded-xl p-8 border border-white/5">
+<div class="flex flex-col h-full justify-between">
+<div class="space-y-4">
+<div class="h-2 w-3/4 bg-primary/20 rounded"></div>
+<div class="h-2 w-full bg-primary/20 rounded"></div>
+<div class="h-2 w-1/2 bg-primary/20 rounded"></div>
+</div>
+<div class="border-2 border-dashed border-primary/30 rounded-lg p-6 flex flex-col items-center justify-center text-primary/60">
+<span class="material-symbols-outlined text-4xl mb-2" data-icon="upload_file">upload_file</span>
+<span class="text-[10px] font-label uppercase tracking-widest">Drop specifications here</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Product Card 4 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Contemporary denim jacket with detailed stitching and high-quality hardware shown on a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVpUpC5zPF9Rb4wxAnn1pBZEk8pEyIldWM79mACJWxnPidDmKtTKzAqKETOOoIF90rTuyD_329FfukeZRwtI8gP04xokO1C2iigRIonyKz91Hn-mMlg8a7eYAxvr4IP3Li6IkFJbyMJex3s96Y8nhxO0eVHgnsQ6UiPupQRz-kCIF7xsH3Xd_S8xvq7sccV2REHkZeP2LgBwmTuuZsQrWtL7hsOaGxF_HDxbmpwXemFP1omZ8jBCLA87s4AQOW3zS6QWC_7tEEqEc"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Denim</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Selvedge Utility Jacket</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">Raw selvedge denim built for resilience. Featuring antique brass hardware and reinforced pockets.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+<!-- Product Card 5 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek black premium t-shirt draped elegantly, highlighting the superior fabric quality and deep pigment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4lGLLqoGSaLrE656RXypXXmzsmApmvq1B7-LtMpwKXFpLCL4W5auYSyLfkJuoIpz4UJXiE2--rxNF9qfJxxJash-FmCWFFfyM998sfAmeLrYE1pPTZaHNIC_AAB4HFP2Tl72pOKG1W5SSZiz-Z9-ChoKqmLhrBGjOk6fHQUxmqoSAi5ZM8nZDw3jiKc_yjWEaxXEtjevEH_xQAcCWc9Evs00SxDyTrNTpO1w4TQCjkIyIrUEeVdwlFQof1ZLRz1nCUzthaKnZIm8"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Basics</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Supima Cotton Tee</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">The pinnacle of basic apparel. Extra-long staple cotton for unmatched softness and longevity.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+<!-- Product Card 6 -->
+<article class="group cursor-pointer">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden rounded-xl bg-stone-200 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/10 group-hover:-translate-y-2 group-hover:outline group-hover:outline-2 group-hover:outline-primary/50">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Collection of high-end activewear leggings and tops in earthy tones, showing stretch and fabric tech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6zdNLrDndZw_OwCSbnf6ETiQo6OQm1napSs5fmvrPvmo3J0AZS4L9tZ1owps1ZDOoOaazTGwATWR0wh0Y8gaaF8GKkgGlbl0anDSjtmStsNMABfajAipQej6UkqTgtEqkvTISwlEyX-1BYNbUpMpA10ptGM_mf4DL8kQsUAaB3QENdyUD1oZ0R4zlsTIyksg6zYmYgLhSB8YgR76epwLgWvGvYyYcrRcbEeh6lfWf1Snz5DmgL3RJJ81cWcDI2_g3PPezGD1lv38"/>
+<span class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] font-label uppercase tracking-widest">Active</span>
+</div>
+<h3 class="text-2xl font-headline text-slate-900 mb-2">Tech-Flex Legging</h3>
+<p class="text-sm text-slate-600 mb-6 leading-relaxed">Moisture-wicking recycled nylon with 4-way stretch and interlocking seams for high-performance use.</p>
+<button class="w-full py-4 border border-outline-variant text-slate-900 font-label uppercase text-[10px] tracking-widest hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Get Quote
+                        </button>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-24 flex justify-center">
+<button class="flex flex-col items-center group">
+<span class="text-primary font-label uppercase tracking-widest text-xs mb-4 group-hover:translate-y-1 transition-transform">Load More Products</span>
+<div class="w-px h-16 bg-gradient-to-b from-primary to-transparent"></div>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-12 px-12 border-t border-stone-900 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start w-full gap-8">
+<div class="space-y-6">
+<div class="text-xl font-headline italic text-stone-300">Trendy Threads BD</div>
+<p class="text-stone-500 font-label text-[10px] leading-relaxed uppercase tracking-widest">
+                © 2024 Trendy Threads BD. All Rights Reserved. Industrial-Luxury Manufacturing.
+            </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-amber-400 font-label text-[10px] uppercase tracking-[0.2em]">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-500 hover:text-stone-200 transition-colors text-[10px] uppercase tracking-widest" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 hover:text-stone-200 transition-colors text-[10px] uppercase tracking-widest" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-amber-400 font-label text-[10px] uppercase tracking-[0.2em]">Operations</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-500 hover:text-stone-200 transition-colors text-[10px] uppercase tracking-widest" href="#">Compliance</a></li>
+<li><a class="text-stone-500 hover:text-stone-200 transition-colors text-[10px] uppercase tracking-widest" href="#">Logistics</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-amber-400 font-label text-[10px] uppercase tracking-[0.2em]">Global Headquarters</h4>
+<p class="text-stone-500 text-[10px] uppercase tracking-widest leading-loose">
+                Dhaka Industrial Zone, Block B<br/>
+                Bangladesh / International Export Division
+            </p>
+</div>
+</footer>
+</body></html>
